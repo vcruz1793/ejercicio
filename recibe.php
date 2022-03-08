@@ -92,6 +92,8 @@
 		$numero_a = $_POST['numero_a'];
 		$numero_b = $_POST['numero_b'];
 		$numero_c = $_POST['numero_c'];
+		$numero_d = $_POST['numero_d'];
+
 		$orden_final = ''; //cadena vacia 
 		# sentencias selectivas Multiples y anidadas
 		if($numero_a > $numero_b):
