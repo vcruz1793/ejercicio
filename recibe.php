@@ -117,11 +117,18 @@
 				$orden_final = "C=$numero_c, B=$numero_b, A=$numero_a";
 			endif;
 		endif;
-		() / 
-		* mod
-		+ - 
+
 		echo "El orden calculado es: $orden_final";
 		
+	}
+
+	function incrementa(){
+		
+		for ($i=1; $i <= 100; $i++):
+			echo "$i - Marcelo";
+			echo "<br>";
+		endfor;
+
 	}
 
 	# get_promedio();
@@ -131,6 +138,6 @@
 	#echo "</pre>";
 	# get_sueldo_total();
 	 
-	get_orden(); 
-	
+	# get_orden(); 
+	incrementa();
 ?>
