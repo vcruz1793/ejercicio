@@ -1,6 +1,11 @@
 <?php 
-
+	//ARREGLOS de índices
+	//ARREGLOS de clave valor
+	//Ciclo For y el Ciclo While
 	
+
+
+
 	function get_promedio(){
 		$calificacion_1 = $_POST['calificacion_1'];
 		$calificacion_2 = $_POST['calificacion_2'];
@@ -131,6 +136,36 @@
 
 	}
 
+
+	function login(){
+		$BASE_DE_DATOS = array(
+			# CORREOS            =>  CONTRASEÑAS
+			"vcruz@gmail.com"    => "123456",
+			"julio@gmail.com"    => "abcdef",
+			"erick@outlook.com"  => "A.Xy7",
+			"tamara@hotmail.com" => "mar123",
+		);
+
+		$email    = $_POST['email'];
+		$password = $_POST['pwd'];
+
+
+		# Se hace una consulta a Base de datos
+		if ( array_key_exists($email, $BASE_DE_DATOS) ):
+			
+			if($BASE_DE_DATOS[$email] == $password):
+				# echo "Tines acceso al panel de administrador";
+				header('Location: dashboard.php');
+			else:
+				echo "Email o password erroneos";
+			endif;
+
+		else:
+			echo "El usuario no está registrado";
+		endif;
+
+	}
+
 	# get_promedio();
 	# get_grados();
 	#echo "<pre>";
@@ -139,5 +174,6 @@
 	# get_sueldo_total();
 	 
 	# get_orden(); 
-	incrementa();
+	# incrementa();
+	login();
 ?>
