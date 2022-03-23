@@ -10,5 +10,10 @@
 
 	<h1>Dashboard - Inicio</h1>
 
+	<div id="pgside">
+		<img src="assets/img/wolf_icon.png" alt="admin-panel-icon">
+		<i class="txt">My Admin</i>
+	</div>
+
 </body>
 </html>
