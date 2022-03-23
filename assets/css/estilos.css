@@ -1,1 +1,18 @@
+* {
+	font-family: arial, sans-serif;	
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
 .color_header{color: blue;}
+#pgside{
+	width: 200px;
+	transition: width 0.2s;
+	background: #3f3691;
+}
