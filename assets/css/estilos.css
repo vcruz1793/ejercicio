@@ -14,5 +14,29 @@ body {
 #pgside{
 	width: 200px;
 	transition: width 0.2s;
-	background: #3f3691;
+	background: #283039;
+}
+#pgside a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+#pgside a.current{background: #912020;}
+#pgside a:hover { background: pink; }
+
+#pgside #pguser img{
+	width: 50px;
+	margin-right: 5px;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+.txt{color:  white; }
+
+#seccion_principal{
+	flex-grow: 1;
+	padding: 20px;
+	background: #f2f2f2;
 }
